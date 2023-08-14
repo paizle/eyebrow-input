@@ -1,0 +1,43 @@
+.EyebrowInput {
+  display: inline-block;
+  border: 1px solid black;
+  font-size: 24px;
+  font-family: Arial;
+  
+  label {
+    display: inline-block;
+    position: relative;
+    
+    .label-text {
+      pointer-events: none;
+      position: absolute;
+      top: .5em;
+      left: .25em;
+      display: flex;
+      align-items: center;
+      font-size: inherit;
+      font-family: inherit;
+      background-color: white;
+      padding: 0 .25em;
+      opacity: .5;
+      transition: 200ms;
+    }
+
+    input[type='text']  {
+      appearance: none;
+      border: none;
+      padding: .5em;
+      font-size: inherit;
+      font-family: inherit;
+    }
+  }
+
+  &.is-raised {
+    .label-text {
+      top: -.6em;
+      left: 1em;
+      font-size: .8em;
+      opacity: 1;
+    }
+  }
+}

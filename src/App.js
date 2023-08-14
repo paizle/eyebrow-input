@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import EyebrowInput from './components/EyebrowInput'
+import './App.scss'
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <form>
+        <h1>Eyebrow Inputs</h1>
+        <div className="row">
+          <EyebrowInput label="First Name" />
+          <EyebrowInput label="Last Name" />
+        </div>
+        <div className="row">
+          <EyebrowInput label="Adress Line 1" />
+          <EyebrowInput label="Address Line 2" />
+        </div>
+      </form>
     </div>
   );
 }
