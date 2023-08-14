@@ -2,6 +2,10 @@
 
 Testing a basic "eye brow" input where the field label is raised above if the input has focus or the value is a non-empty string. Designed for any font size by simply changing EyebrowInput.scss: `.EyebrowInput { font-size }`
 
+# Preview
+
+![Eyebrow Inputs preview](./public/eyebrow-inputs-preview.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
